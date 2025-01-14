@@ -1,0 +1,25 @@
+2025-01-14 10:53:42.347 - INFO     - dcm2bids_scaffold.main | --- dcm2bids_scaffold start ---
+2025-01-14 10:53:42.347 - INFO     - dcm2bids_scaffold.main | Running the following command: /home/jmartinez/.local/bin/dcm2bids_scaffold -o Suj09
+2025-01-14 10:53:42.359 - INFO     - dcm2bids_scaffold.main | OS version: Linux-5.15.0-126-generic-x86_64-with-glibc2.29
+2025-01-14 10:53:42.359 - INFO     - dcm2bids_scaffold.main | Python version: 3.8.10 (default, Nov  7 2024, 13:10:47) [GCC 9.4.0]
+2025-01-14 10:53:42.359 - INFO     - dcm2bids_scaffold.main | dcm2bids version: 3.2.0
+2025-01-14 10:53:42.359 - INFO     - dcm2bids_scaffold.main | Checking for software update
+2025-01-14 10:53:42.855 - INFO     - tools.check_latest | Currently using the latest version of dcm2bids.
+2025-01-14 10:53:42.856 - INFO     - dcm2bids_scaffold.main | The files used to create your BIDS directory were taken from https://github.com/bids-standard/bids-starter-kit. 
+
+2025-01-14 10:53:43.133 - INFO     - utils.print_tree | Tree representation of Suj09/
+2025-01-14 10:53:43.134 - INFO     - utils.print_tree | Suj09/
+2025-01-14 10:53:43.134 - INFO     - utils.print_tree | ├── code/
+2025-01-14 10:53:43.134 - INFO     - utils.print_tree | ├── derivatives/
+2025-01-14 10:53:43.134 - INFO     - utils.print_tree | ├── sourcedata/
+2025-01-14 10:53:43.134 - INFO     - utils.print_tree | ├── tmp_dcm2bids/
+2025-01-14 10:53:43.135 - INFO     - utils.print_tree | │   └── log/
+2025-01-14 10:53:43.135 - INFO     - utils.print_tree | │       └── scaffold_20250114-105342.log
+2025-01-14 10:53:43.135 - INFO     - utils.print_tree | ├── .bidsignore
+2025-01-14 10:53:43.135 - INFO     - utils.print_tree | ├── CHANGES
+2025-01-14 10:53:43.135 - INFO     - utils.print_tree | ├── dataset_description.json
+2025-01-14 10:53:43.135 - INFO     - utils.print_tree | ├── participants.json
+2025-01-14 10:53:43.135 - INFO     - utils.print_tree | ├── participants.tsv
+2025-01-14 10:53:43.136 - INFO     - utils.print_tree | └── README
+2025-01-14 10:53:43.136 - INFO     - dcm2bids_scaffold.main | Log file saved at Suj09/tmp_dcm2bids/log/scaffold_20250114-105342.log
+2025-01-14 10:53:43.136 - INFO     - dcm2bids_scaffold.main | --- dcm2bids_scaffold end ---
