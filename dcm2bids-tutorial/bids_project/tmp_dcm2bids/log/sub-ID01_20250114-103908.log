@@ -1,0 +1,46 @@
+2025-01-14 10:39:08.868 - INFO     - dcm2bids.main | --- dcm2bids start ---
+2025-01-14 10:39:08.868 - INFO     - dcm2bids.main | Running the following command: /home/jmartinez/.local/bin/dcm2bids -d sourcedata/dcm_qa_nih/In/ -p ID01 -c code/dcm2bids_config.json --auto_extract_entities
+2025-01-14 10:39:08.878 - INFO     - dcm2bids.main | OS version: Linux-5.15.0-126-generic-x86_64-with-glibc2.29
+2025-01-14 10:39:08.879 - INFO     - dcm2bids.main | Python version: 3.8.10 (default, Nov  7 2024, 13:10:47) [GCC 9.4.0]
+2025-01-14 10:39:08.879 - INFO     - dcm2bids.main | dcm2bids version: 3.2.0
+2025-01-14 10:39:08.883 - INFO     - dcm2bids.main | dcm2niix version: v1.0.20240202
+2025-01-14 10:39:08.883 - INFO     - dcm2bids.main | Checking for software update
+2025-01-14 10:39:09.186 - INFO     - tools.check_latest | Currently using the latest version of dcm2bids.
+2025-01-14 10:39:09.541 - WARNING  - tools.check_latest | A newer version exists for dcm2niix: v1.0.20241211
+2025-01-14 10:39:09.541 - WARNING  - tools.check_latest | You should update it -> https://github.com/rordenlab/dcm2niix.
+2025-01-14 10:39:09.541 - INFO     - dcm2bids.main | participant: sub-ID01
+2025-01-14 10:39:09.542 - INFO     - dcm2bids.main | config: /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/code/dcm2bids_config.json
+2025-01-14 10:39:09.542 - INFO     - dcm2bids.main | BIDS directory: /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project
+2025-01-14 10:39:09.542 - INFO     - dcm2bids.main | Auto extract entities: True
+2025-01-14 10:39:09.542 - INFO     - dcm2bids.main | Reorder entities: True
+2025-01-14 10:39:09.542 - INFO     - dcm2bids.main | Validate BIDS: False
+
+2025-01-14 10:39:09.544 - INFO     - utils.run_shell_command | Running: dcm2niix -b y -ba y -z y -f %3s_%f_%p_%t -o /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/tmp_dcm2bids/sub-ID01 sourcedata/dcm_qa_nih/In
+2025-01-14 10:39:10.10 - DEBUG    - dcm2niix_gen.execute | 
+Chris Rorden's dcm2niiX version v1.0.20240202  (JP2:OpenJPEG) (JP-LS:CharLS) GCC8.4.0 x86-64 (64-bit Linux)
+Found 608 DICOM file(s)
+Convert 150 DICOM as /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/tmp_dcm2bids/sub-ID01/006_In_DCM2NIIX_regression_test_20180918114023 (64x64x15x10)
+Convert 2 DICOM as /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/tmp_dcm2bids/sub-ID01/005_In_EPI_PE=RL_20180918121230 (72x72x5x2)
+Convert 150 DICOM as /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/tmp_dcm2bids/sub-ID01/004_In_DCM2NIIX_regression_test_20180918114023 (64x64x15x10)
+Convert 2 DICOM as /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/tmp_dcm2bids/sub-ID01/004_In_EPI_PE=PA_20180918121230 (72x72x5x2)
+Convert 150 DICOM as /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/tmp_dcm2bids/sub-ID01/007_In_DCM2NIIX_regression_test_20180918114023 (64x64x15x10)
+Convert 2 DICOM as /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/tmp_dcm2bids/sub-ID01/006_In_EPI_PE=LR_20180918121230 (72x72x5x2)
+Convert 2 DICOM as /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/tmp_dcm2bids/sub-ID01/003_In_EPI_PE=AP_20180918121230 (72x72x5x2)
+Convert 150 DICOM as /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/tmp_dcm2bids/sub-ID01/005_In_DCM2NIIX_regression_test_20180918114023 (64x64x15x10)
+Conversion required 0.461006 seconds (0.460588 for core code).
+
+2025-01-14 10:39:10.10 - INFO     - dcm2niix_gen.execute | Check log file for dcm2niix output
+
+2025-01-14 10:39:10.15 - INFO     - sidecar.build_acquisitions | SIDECAR PAIRING
+2025-01-14 10:39:10.16 - INFO     - sidecar.build_acquisitions | sub-ID01_task-rest_bold  <-  004_In_DCM2NIIX_regression_test_20180918114023
+2025-01-14 10:39:10.16 - INFO     - sidecar.build_acquisitions | No Pairing  <-  005_In_DCM2NIIX_regression_test_20180918114023
+2025-01-14 10:39:10.16 - INFO     - sidecar.build_acquisitions | No Pairing  <-  006_In_DCM2NIIX_regression_test_20180918114023
+2025-01-14 10:39:10.16 - INFO     - sidecar.build_acquisitions | No Pairing  <-  007_In_DCM2NIIX_regression_test_20180918114023
+2025-01-14 10:39:10.16 - INFO     - sidecar.build_acquisitions | sub-ID01_dir-AP_epi  <-  003_In_EPI_PE=AP_20180918121230
+2025-01-14 10:39:10.17 - INFO     - sidecar.build_acquisitions | sub-ID01_dir-PA_epi  <-  004_In_EPI_PE=PA_20180918121230
+2025-01-14 10:39:10.17 - INFO     - sidecar.build_acquisitions | sub-ID01_dir-RL_epi  <-  005_In_EPI_PE=RL_20180918121230
+2025-01-14 10:39:10.18 - INFO     - sidecar.build_acquisitions | sub-ID01_dir-LR_epi  <-  006_In_EPI_PE=LR_20180918121230
+2025-01-14 10:39:10.18 - INFO     - dcm2bids_gen.run | Moving acquisitions into BIDS folder "/home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/sub-ID01".
+
+2025-01-14 10:39:10.23 - INFO     - dcm2bids.main | Logs saved in /home/jmartinez/dcm2bid/dcm2bids-tutorial/bids_project/tmp_dcm2bids/log/sub-ID01_20250114-103908.log
+2025-01-14 10:39:10.23 - INFO     - dcm2bids.main | --- dcm2bids end ---
