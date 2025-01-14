@@ -1,0 +1,22 @@
+https://unfmontreal.github.io/Dcm2Bids/3.2.0/tutorial/first-steps/
+
+conda install -c conda-forge dcm2bids
+conda install -c conda-forge dcm2niix
+
+mkdir dcm2bids-tutorial
+cd dcm2bids-tutorial
+
+dcm2bids_scaffold
+
+unzip dcm_qa_nih-master.zip -d sourcedata/
+
+mv sourcedata/dcm_qa_nih-master sourcedata/dcm_qa_nih
+
+
+dcm2bids_helper -d sourcedata/dcm_qa_nih/In/
+
+
+
+
+
+

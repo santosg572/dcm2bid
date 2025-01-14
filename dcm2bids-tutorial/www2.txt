@@ -1,0 +1,5 @@
+nano code/dcm2bids_config.json
+
+dcm2bids -d path/to/source/data -p subID -c path/to/config/file.json --auto_extract_entities
+
+
